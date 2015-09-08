@@ -7,13 +7,10 @@ import java.io.*;
 
 public class Practice {
 
-    static ArrayList<Integer> SortedArrayList = new ArrayList<Integer>();
-    static ArrayList<Integer> deckArray = new ArrayList<Integer>();
-    static String inputSizeString = null;//
-
     public static void main(String args[]) {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
+        String inputSizeString = null;
 
         try {
             System.out.print("Enter a Deck Size Here:");
@@ -24,13 +21,13 @@ public class Practice {
             System.exit(1);
         }
 
-        int inputSizeint = Integer.parseInt(inputSizeString);
-
-        swap(inputSizeint);
-        System.out.println(SortedArrayList);
+        System.out.println( swap(Integer.parseInt(inputSizeString)) );
     }
 
-    public static void swap( int sizeOfDeck ){
+    public static ArrayList<Integer> swap( int sizeOfDeck ){
+
+        ArrayList<Integer> SortedArrayList = new ArrayList<Integer>();
+        ArrayList<Integer> deckArray = new ArrayList<Integer>();
 
         for( int x=0; x < sizeOfDeck; x++)
             deckArray.add(x);
@@ -44,10 +41,12 @@ public class Practice {
             deckArray.remove(0);
 
             if( !deckArray.isEmpty() ) {
-                deckArray.add(deckArray.get(0));
+                deckArray.add( deckArray.get(0) );
                 deckArray.remove(0);
             }
         }
+
+        return SortedArrayList;
     }
 }
 
