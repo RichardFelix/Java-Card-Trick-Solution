@@ -9,7 +9,9 @@ public class Practice {
 
     public static void main(String args[]) {
 
-        BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
+        BufferedReader br = new BufferedReader( new InputStreamReader(System.in) 
+
+);
         String inputSizeString = null;
 
         try {
@@ -29,11 +31,11 @@ public class Practice {
         ArrayList<Integer> SortedArrayList = new ArrayList<Integer>();
         ArrayList<Integer> deckArray = new ArrayList<Integer>();
 
-        for( int x=0; x < sizeOfDeck; x++)
-            deckArray.add(x);
+        for( int x=0; x < sizeOfDeck; x++) {
 
-        for( int x=0; x <sizeOfDeck; x++)
+            deckArray.add(x);
             SortedArrayList.add(0);
+        }
 
         for( int x=1; x < sizeOfDeck + 1; x++){
 
