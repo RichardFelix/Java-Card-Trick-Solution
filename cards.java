@@ -5,13 +5,13 @@
 import java.util.*;
 import java.io.*;
 
-public class Practice {
+public class Cards{
 
     public static void main(String args[]) {
 
-        BufferedReader br = new BufferedReader( new InputStreamReader(System.in) 
+        BufferedReader br = new BufferedReader( new InputStreamReader(System.in)
 
-);
+        );
         String inputSizeString = null;
 
         try {
@@ -37,7 +37,7 @@ public class Practice {
             SortedArrayList.add(0);
         }
 
-        for( int x=1; x < sizeOfDeck + 1; x++){
+        for( int x=1; x <= sizeOfDeck ; x++){
 
             SortedArrayList.set(deckArray.get(0), x);
             deckArray.remove(0);
@@ -51,4 +51,3 @@ public class Practice {
         return SortedArrayList;
     }
 }
-
