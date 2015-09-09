@@ -1,6 +1,6 @@
 # Java-Card-Trick-Solution
 
-This is a card trick my Math teacher gave us to figure out in code.  This is how the trick works.	    
+Math trick figured out in Java code.  This is how the trick works.	    
 
 1. Get any number of cards in the same suit.	
 2. Use algorithm to put cards in correct order.
